@@ -1,9 +1,9 @@
-Name:       sample-sfos-qqc2
+Name:       harbour-mdviewer
 Summary:    Sample QtQuick Controls 2 application for SailfishOS
 Version:    1.0
 Release:    1
 License:    BSD
-URL:        https://github.com/sailfishos-chum/sample-sfos-qqc2
+URL:        https://github.com/attah/harbour-mdviewer
 Source0:    %{name}-%{version}.tar.bz2
 Requires:       qt-runner
 Requires:       opt-qt5-qtwayland >= 5.15.8

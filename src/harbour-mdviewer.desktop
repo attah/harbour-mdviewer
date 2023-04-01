@@ -1,9 +1,9 @@
 [Desktop Entry]
 Type=Application
 X-Nemo-Application-Type=generic
-Icon=sample-sfos-qqc2
-Exec=qt-runner /opt/sample-sfos-qqc2/bin/sample-sfos-qqc2
-Name=Sample QQC2
+Icon=harbour-mdviewer
+Exec=qt-runner /usr/bin/harbour-mdviewer
+Name=Markdown Viewer
 
 [X-Sailjail]
 Sandboxing=Disabled

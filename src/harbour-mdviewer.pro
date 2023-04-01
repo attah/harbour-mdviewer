@@ -21,7 +21,7 @@ desktop.path  = /usr/share/applications
 desktop.files = *.desktop
 
 icons.path    = /usr/share/icons/hicolor/86x86/apps/
-icons.files   = sample-sfos-qqc2.png
+icons.files   = harbour-mdviewer.png
 
 qml.path    = /usr/share/$$TARGET/
 qml.files   = qml/
