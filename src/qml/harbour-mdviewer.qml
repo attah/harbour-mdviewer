@@ -3,32 +3,21 @@ import QtQuick.Window 2.15
 import QtQuick.Controls 2.15
 
 Window {
-    width: 640
-    height: 480
+    id: window
     visible: true
-    title: qsTr("QQC2 Sample")
 
-    Column {
-        Text {
-            text: "QQC2 Sample"
-        }
-
-        Button{
-            text: "Red"
-            onClicked: {
-                rect.color = "red"
-            }
-        }
-        Button {
-            text: "Blue"
-            onClicked: {
-                rect.color = "blue"
-            }
-        }
-        Rectangle {
-            id: rect
-            width: 100
-            height: 100
+    Flickable {
+        anchors.fill: parent
+        contentWidth: text.width;
+        contentHeight: text.height
+        Text
+        {
+            id:text
+            width: window.width
+            wrapMode: Text.WordWrap
+            font.pointSize: 6
+            text: markdown
+            textFormat: Text.MarkdownText
         }
     }
 }

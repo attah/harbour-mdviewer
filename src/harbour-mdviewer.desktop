@@ -4,6 +4,7 @@ X-Nemo-Application-Type=generic
 Icon=harbour-mdviewer
 Exec=qt-runner /usr/bin/harbour-mdviewer
 Name=Markdown Viewer
+MimeType=text/markdown
 
 [X-Sailjail]
 Sandboxing=Disabled

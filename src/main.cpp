@@ -1,6 +1,7 @@
 #include <QString>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
 #include <QFileInfo>
 #include <QDir>
 #include <QUrl>
@@ -55,6 +56,18 @@ int main(int argc, char *argv[])
             QCoreApplication::exit(-1);
     }, Qt::QueuedConnection);
     engine.load(url);
+
+    QString markdown = "uninit";
+    if(argc == 2)
+    {
+        QFile file(argv[1]);
+        if(file.open(QIODevice::ReadOnly))
+        {
+            markdown = file.readAll();
+        }
+    }
+
+    engine.rootContext()->setContextProperty("markdown", markdown);
 
     return app.exec();
 }
